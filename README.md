@@ -32,3 +32,11 @@ $ systemctl restart docker
 
 Restart jenkins: http://<ec2-instance-public-ip>:8080/restart
 
+##### Install docker pipeline plugin in jenkins
+
+1. log into jenkins 
+2. manage jenkins > manage plugins
+3. install docker pipeline plugin
+
+![docker-plugin](docker-pipeline-plugin.png)
+

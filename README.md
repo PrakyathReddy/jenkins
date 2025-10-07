@@ -15,3 +15,20 @@
 
 ![install](installation-complete.png)
 
+jenkins master can be installed on a node, but with agents, it is always recommended to go with containers rather than nodes for better use of resources. It saves cost and improves efficiency.
+
+Ideally we would need use different instances to spin up containers, but for sake of simplicity, I will set up docker on the same instance. We can also install docker on a different machine, but we need to configure that as a slave.
+
+##### Docker setup
+$ sudo apt update
+$ sudo apt install docker.io
+
+The docker daemon should be accessible for the jenkins and ubuntu user.
+
+$ sudo su - <br>
+$ usermod -aG docker jenkins
+$ usermod -aG docker ubuntu 
+$ systemctl restart docker
+
+Restart jenkins: http://<ec2-instance-public-ip>:8080/restart
+

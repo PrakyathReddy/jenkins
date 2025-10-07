@@ -40,5 +40,7 @@ Restart jenkins: http://<ec2-instance-public-ip>:8080/restart
 
 ![docker-plugin](docker-pipeline-plugin.png)
 
-### Create pipeline to test if docker slave configuration is working as expected
+### Create pipeline to test if docker slave configuration is working as expected, and then with multi-agent multi-stage pipelines
+
+![build-success](jenkins-build.png)
 
